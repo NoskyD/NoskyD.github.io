@@ -2,12 +2,16 @@
 
 
 
-html {
-  font-family: 'Ubuntu', sans-serif;
-}
+
 
 #Title {
   text-indent: 500px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#Desc {
+  font-family: 'Ubuntu', sans-serif;
+  text-indent: 150px;
 }
 
 
