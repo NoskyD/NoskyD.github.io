@@ -24,10 +24,10 @@
       <p><h3>Оптимизация будет, когда разраб прочитает до конца книгу по JavaScript</h3></p>
     </div>
     <script type="text/javascript">
-      function siteisloaded() {
-        alert('Добро пожаловать на сайт GD Manjaro!')
-        console.log('Вы зашли на сайт.')
-      }
+      var noselect = false;
+      document.ondragstart = noselect;
+      document.onselectstart = noselect;
+      document.oncontextmenu = noselect;
     </script>
   </body>
 </html>
