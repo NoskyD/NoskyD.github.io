@@ -1,7 +1,13 @@
 /* START */
 
 
-
+html {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
 #GDMTitle{
   font-family: 'Poppins', sans-serif;
   text-indent: 500px;
