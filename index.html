@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head onload="siteisloaded()">
-    <meta charset="utf-8">
-    <title>GD Manjaro's Homepage</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-  </head>
-  <body>
-    <div class="Main" id="GDMTitle">
-      <p><h1>GD Manjaro's Homepage</h1></p>
-      <p style="text-indent: 150px;">All about GDManjaro</p>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+  <script type="module">
+    import '@material/web/all.js';
+    import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+</head>
+<body>
+  <h1 class="md-typescale-display-medium">Hello Material!</h1>
+  <form>
+    <p class="md-typescale-body-medium">Check out these controls in a form!</p>
+    <md-checkbox></md-checkbox>
+    <div>
+      <md-radio name="group"></md-radio>
+      <md-radio name="group"></md-radio>
+      <md-radio name="group"></md-radio>
     </div>
-    <div class="AboutME" id="AboutMEtitle">
-      <p><h1><strong>Обо мне</strong></h1></p>
-    </div>
-    <div class="AboutME" id="AboutMEdesc">
-      <p><h3>Короче, пора сделать РУССКИЙ язык</h3></p>
-      <p><h3>Я GDManjaro (Имя конечно скрою), Я обычный ламер, которому нечего делать 👍</h3></p>
-      <p><h3>Сайт хостится на github.io потому-что разраб - полный халявщик.</h3></p>
-      <p><h3>Если вы зашли сюда с телефона, то извините за то, что у вас болят глаза из за плохой оптимизаций.</h3></p>
-      <p><h3>У меня есть свой дискорд бот, но это во вкладке Projects (Но ведь автор её не добавил).</h3></p>
-      <p><h3>Оптимизация будет, когда разраб прочитает до конца книгу по JavaScript</h3></p>
-    </div>
-    <script type="text/javascript">
-      var noselect = false;
-      document.ondragstart = noselect;
-      document.onselectstart = noselect;
-      document.oncontextmenu = noselect;
-    </script>
+    <md-outlined-text-field label="Favorite color" value="Purple"></md-outlined-text-field>
+    <md-outlined-button type="reset">Reset</md-outlined-button>
+  </form>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+  </style>
   </body>
 </html>
