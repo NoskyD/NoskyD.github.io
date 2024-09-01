@@ -1,29 +1,25 @@
-/* START */
-
-
-html {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-#GDMTitle{
-  font-family: 'Poppins', sans-serif;
-  text-indent: 500px;
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color, #fff);
 }
 
-#AboutMEtitle {
-  font-family: 'Poppins', sans-serif;
-  text-indent: 150px;
+header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-#AboutMEdesc {
-  font-family: 'Poppins', sans-serif;
-  text-indent: 150px;
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
 }
 
-
-
-
-/* END */
+.grid-item {
+    background-color: var(--primary-color, #6200ea);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
